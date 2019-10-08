@@ -1,8 +1,8 @@
+#import libs
 import pandas as pd
 import numpy as np
 import os
 import io
-
 import matplotlib.pyplot as plt
 import matplotlib
 'exec(%matplotlib inline)'
@@ -12,6 +12,7 @@ import boto3
 import sagemaker
 
 # boto3 client to get S3 data
+# TODO: need to move the keys to a env file for easier management
 s3_client = boto3.client('s3',
          aws_access_key_id='AKIAIIIPE423XIAMEGVQ',
          aws_secret_access_key='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')
